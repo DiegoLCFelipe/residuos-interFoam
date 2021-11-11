@@ -1,0 +1,2162 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b45f8f6f58-20200629 OPENFOAM=2006
+Arch   : "LSB;label=32;scalar=64"
+Exec   : interFoam
+Date   : Nov 11 2021
+Time   : 10:47:45
+Host   : diego
+PID    : 16706
+I/O    : uncollated
+Case   : /home/diego/Documentos/Dissertação/residuos/simualcao-teste
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.009
+
+
+PIMPLE: Operating solver in PISO mode
+
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Reading transportProperties
+
+Selecting incompressible transport model Newtonian
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmega
+RAS
+{
+    RASModel        kOmega;
+    turbulence      on;
+    printCoeffs     on;
+    betaStar        0.09;
+    beta            0.072;
+    gamma           0.52;
+    alphaK          0.5;
+    alphaOmega      0.5;
+}
+
+
+Reading g
+
+Reading hRef
+Calculating field g.h
+
+No MRF models present
+
+No finite volume options present
+Restarting alpha
+GAMGPCG:  Solving for pcorr, Initial residual = 0.464156, Final residual = 3.64023e-06, No Iterations 8
+time step continuity errors : sum local = 1.08941e-18, global = -3.10111e-20, cumulative = -3.52269e-20
+Courant Number mean: 0.4325 max: 0.432501
+
+Starting time loop
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.00925
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998547  Min(alpha.water) = -0.0152375  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000864882, Final residual = 2.17505e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0019529, Final residual = 5.30428e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000443808, Final residual = 1.11383e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.117313, Final residual = 1.91495e-13, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.175454, Final residual = 8.13851e-12, No Iterations 2
+ExecutionTime = 0.73 s  ClockTime = 1 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0095
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998508  Min(alpha.water) = -0.0137271  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000529013, Final residual = 1.13577e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000871852, Final residual = 3.15979e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000393618, Final residual = 6.23697e-06, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.393698, Final residual = 9.45183e-15, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.103103, Final residual = 1.76718e-11, No Iterations 2
+ExecutionTime = 0.9 s  ClockTime = 1 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.00975
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998469  Min(alpha.water) = -0.0125127  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00293051, Final residual = 7.25854e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0136506, Final residual = 0.000412574, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00286218, Final residual = 4.77041e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.189424, Final residual = 4.44433e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.225727, Final residual = 8.56162e-11, No Iterations 2
+ExecutionTime = 1.08 s  ClockTime = 1 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99843  Min(alpha.water) = -0.0317653  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0134999, Final residual = 0.000616771, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00269936, Final residual = 7.92965e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00236376, Final residual = 8.37391e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.110838, Final residual = 9.98856e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.14403, Final residual = 4.16634e-10, No Iterations 2
+ExecutionTime = 1.54 s  ClockTime = 1 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01025
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99839  Min(alpha.water) = -0.0233164  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00246348, Final residual = 8.40519e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0218963, Final residual = 0.000561748, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00389037, Final residual = 0.000108536, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.522522, Final residual = 1.02921e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.219055, Final residual = 3.84283e-09, No Iterations 2
+ExecutionTime = 1.73 s  ClockTime = 2 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0105
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998351  Min(alpha.water) = -0.0243262  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00397518, Final residual = 0.000101796, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00458843, Final residual = 0.000153492, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00280322, Final residual = 8.89998e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.303857, Final residual = 3.97359e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.183957, Final residual = 2.41117e-08, No Iterations 2
+ExecutionTime = 1.91 s  ClockTime = 2 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01075
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998312  Min(alpha.water) = -0.0216354  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00400465, Final residual = 0.000104779, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00516917, Final residual = 0.000189444, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00170718, Final residual = 7.24002e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.416469, Final residual = 1.5667e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0716685, Final residual = 1.25052e-07, No Iterations 2
+ExecutionTime = 2.12 s  ClockTime = 2 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.011
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998273  Min(alpha.water) = -0.0185896  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00662725, Final residual = 0.000242108, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.131322, Final residual = 0.00531309, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00460726, Final residual = 0.000248267, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.391128, Final residual = 2.99226e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.277898, Final residual = 1.23023e-06, No Iterations 2
+ExecutionTime = 2.6 s  ClockTime = 2 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01125
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998233  Min(alpha.water) = -0.0157424  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0275857, Final residual = 0.000976472, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0074786, Final residual = 0.000276161, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00457471, Final residual = 0.000285109, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.201795, Final residual = 7.13082e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.152521, Final residual = 5.78422e-06, No Iterations 2
+ExecutionTime = 2.82 s  ClockTime = 3 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0115
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998194  Min(alpha.water) = -0.0132426  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.016293, Final residual = 0.000790488, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0117933, Final residual = 0.000525842, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00735289, Final residual = 0.000454107, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.26555, Final residual = 3.28325e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.130359, Final residual = 2.3938e-05, No Iterations 2
+ExecutionTime = 3.01 s  ClockTime = 3 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01175
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998155  Min(alpha.water) = -0.0289783  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0132609, Final residual = 0.000874591, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0141603, Final residual = 0.000773097, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00990296, Final residual = 0.00076603, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.219442, Final residual = 5.65165e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.164672, Final residual = 4.90032e-05, No Iterations 2
+ExecutionTime = 3.18 s  ClockTime = 3 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.012
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998116  Min(alpha.water) = -0.0216809  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0137168, Final residual = 0.00100624, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0136559, Final residual = 0.000825023, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0519881, Final residual = 0.00435397, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0692801, Final residual = 6.15646e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.161871, Final residual = 8.12524e-05, No Iterations 2
+ExecutionTime = 3.63 s  ClockTime = 3 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01225
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998076  Min(alpha.water) = -0.0353809  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0177435, Final residual = 0.00138456, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0101346, Final residual = 0.000797338, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.015968, Final residual = 0.00138483, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.126088, Final residual = 9.43853e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.12918, Final residual = 0.00013969, No Iterations 2
+ExecutionTime = 3.79 s  ClockTime = 4 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0125
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.998037  Min(alpha.water) = -0.0275825  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0527037, Final residual = 0.00086984, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00893632, Final residual = 0.000779394, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0101061, Final residual = 0.000914661, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.387665, Final residual = 5.66365e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.150443, Final residual = 0.000318305, No Iterations 2
+ExecutionTime = 3.98 s  ClockTime = 4 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01275
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997998  Min(alpha.water) = -0.021899  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0212013, Final residual = 0.000366595, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00873183, Final residual = 0.000820265, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0173461, Final residual = 0.00163448, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.168127, Final residual = 1.89283e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.135572, Final residual = 0.000570081, No Iterations 2
+ExecutionTime = 4.15 s  ClockTime = 4 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.013
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997958  Min(alpha.water) = -0.0177223  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0181885, Final residual = 0.000344214, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00836183, Final residual = 0.000137286, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0187526, Final residual = 0.00186524, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0236864, Final residual = 9.40707e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.121659, Final residual = 0.000911255, No Iterations 2
+ExecutionTime = 4.61 s  ClockTime = 4 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01325
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997919  Min(alpha.water) = -0.0145694  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0160635, Final residual = 0.000318009, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00901723, Final residual = 0.000152563, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0276381, Final residual = 0.000496506, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.259185, Final residual = 7.48761e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.123, Final residual = 0.00144602, No Iterations 2
+ExecutionTime = 4.81 s  ClockTime = 5 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0135
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99788  Min(alpha.water) = -0.0269931  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0123364, Final residual = 0.000245372, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00910068, Final residual = 0.000150215, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0306666, Final residual = 0.000622854, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.00759215, Final residual = 6.88995e-07, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.121142, Final residual = 0.00159524, No Iterations 2
+ExecutionTime = 4.98 s  ClockTime = 5 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01375
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997841  Min(alpha.water) = -0.020482  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0214249, Final residual = 0.000529552, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0102436, Final residual = 0.000221877, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0280518, Final residual = 0.000671225, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.491124, Final residual = 1.20215e-07, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.10684, Final residual = 0.002301, No Iterations 2
+ExecutionTime = 5.16 s  ClockTime = 5 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.014
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997801  Min(alpha.water) = -0.0458878  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0166383, Final residual = 0.00039975, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00863106, Final residual = 0.000186135, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.024091, Final residual = 0.000585224, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.246496, Final residual = 1.26636e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0995106, Final residual = 0.00272851, No Iterations 2
+ExecutionTime = 5.62 s  ClockTime = 5 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01425
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997762  Min(alpha.water) = -0.033315  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0142886, Final residual = 0.000321512, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00815684, Final residual = 0.000162663, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0204635, Final residual = 0.000493012, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.21548, Final residual = 2.8413e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0925616, Final residual = 0.00302627, No Iterations 2
+ExecutionTime = 5.79 s  ClockTime = 6 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0145
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997723  Min(alpha.water) = -0.0251277  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0130767, Final residual = 0.000259567, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0088408, Final residual = 0.000148333, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.018821, Final residual = 0.000439652, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.00144649, Final residual = 1.34543e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0869039, Final residual = 0.00286685, No Iterations 2
+ExecutionTime = 5.96 s  ClockTime = 6 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01475
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997684  Min(alpha.water) = -0.0196642  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0163443, Final residual = 0.000363378, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00887992, Final residual = 0.000186271, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0236493, Final residual = 0.000583942, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.00105444, Final residual = 3.78033e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0734765, Final residual = 0.00267165, No Iterations 2
+ExecutionTime = 6.14 s  ClockTime = 6 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.015
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997644  Min(alpha.water) = -0.0158629  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0181975, Final residual = 0.000390569, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0100872, Final residual = 0.000202328, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0220706, Final residual = 0.000572615, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.196566, Final residual = 5.60504e-07, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0739872, Final residual = 0.00305833, No Iterations 2
+ExecutionTime = 6.59 s  ClockTime = 6 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01525
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997605  Min(alpha.water) = -0.0250295  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0163911, Final residual = 0.000369531, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00903425, Final residual = 0.00019084, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0161188, Final residual = 0.000411273, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.116734, Final residual = 1.20991e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0707929, Final residual = 0.00317658, No Iterations 2
+ExecutionTime = 6.77 s  ClockTime = 7 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0155
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997566  Min(alpha.water) = -0.0192845  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0140868, Final residual = 0.000282177, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00864815, Final residual = 0.000165912, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.012598, Final residual = 0.000308048, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0024492, Final residual = 1.93482e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0675647, Final residual = 0.00308143, No Iterations 2
+ExecutionTime = 6.94 s  ClockTime = 7 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01575
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997527  Min(alpha.water) = -0.0432504  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0148135, Final residual = 0.000250243, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00995998, Final residual = 0.000163804, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0118726, Final residual = 0.000278847, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.23347e-06, Final residual = 7.67629e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.184955, Final residual = 0.000739169, No Iterations 2
+ExecutionTime = 7.12 s  ClockTime = 7 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.016
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997487  Min(alpha.water) = -0.0315828  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0183397, Final residual = 0.000380672, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0101366, Final residual = 0.000200627, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0175467, Final residual = 0.000457761, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.513756, Final residual = 1.40352e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0631814, Final residual = 0.00220571, No Iterations 2
+ExecutionTime = 7.57 s  ClockTime = 7 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01625
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997448  Min(alpha.water) = -0.0241097  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0201383, Final residual = 0.000357093, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0106875, Final residual = 0.000206544, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0158536, Final residual = 0.000394298, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.627205, Final residual = 3.72638e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0574552, Final residual = 0.00287262, No Iterations 2
+ExecutionTime = 7.75 s  ClockTime = 8 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 6.93184e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0165
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997409  Min(alpha.water) = -0.0191815  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0208857, Final residual = 0.00199847, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0154459, Final residual = 0.0012017, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0151999, Final residual = 0.000322117, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.35222e-05, Final residual = 1.13741e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0371868, Final residual = 0.000797232, No Iterations 2
+ExecutionTime = 7.91 s  ClockTime = 8 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01675
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99737  Min(alpha.water) = -0.0157625  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.03013, Final residual = 0.00259565, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0174365, Final residual = 0.00164087, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0157414, Final residual = 0.000369284, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.011501, Final residual = 1.3599e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0465348, Final residual = 0.0026362, No Iterations 2
+ExecutionTime = 8.09 s  ClockTime = 8 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.017
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99733  Min(alpha.water) = -0.0206153  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0274446, Final residual = 0.00250778, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0213812, Final residual = 0.00187543, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0161015, Final residual = 0.000377609, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.048431, Final residual = 2.86817e-07, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0521517, Final residual = 0.00363662, No Iterations 2
+ExecutionTime = 8.54 s  ClockTime = 8 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01725
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997291  Min(alpha.water) = -0.0172218  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0235168, Final residual = 0.00196239, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0192128, Final residual = 0.00169928, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0140768, Final residual = 0.000304996, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.191787, Final residual = 2.09841e-05, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0516559, Final residual = 0.00409358, No Iterations 2
+ExecutionTime = 8.72 s  ClockTime = 9 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0175
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997252  Min(alpha.water) = -0.0391746  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0195499, Final residual = 0.00159225, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0162299, Final residual = 0.00151442, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0118432, Final residual = 0.00023913, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 4.23215e-06, Final residual = 2.97246e-07, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.131411, Final residual = 0.00141243, No Iterations 2
+ExecutionTime = 8.89 s  ClockTime = 9 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01775
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997213  Min(alpha.water) = -0.0288853  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0282817, Final residual = 0.000591012, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.017436, Final residual = 0.000430683, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0249393, Final residual = 0.000613435, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.409531, Final residual = 4.83239e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0487574, Final residual = 0.00353794, No Iterations 2
+ExecutionTime = 9.07 s  ClockTime = 9 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.018
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997173  Min(alpha.water) = -0.0224564  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0233292, Final residual = 0.000446809, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0145362, Final residual = 0.000361855, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0220215, Final residual = 0.000511717, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.590597, Final residual = 1.2368e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0416303, Final residual = 0.00400375, No Iterations 2
+ExecutionTime = 9.51 s  ClockTime = 9 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01825
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997134  Min(alpha.water) = -0.0182632  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0172832, Final residual = 0.000321718, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0150046, Final residual = 0.0014688, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0176725, Final residual = 0.000371752, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.116218, Final residual = 8.91894e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0387287, Final residual = 0.000555223, No Iterations 4
+ExecutionTime = 9.69 s  ClockTime = 10 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0185
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997095  Min(alpha.water) = -0.0153432  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0200552, Final residual = 0.00163347, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0160351, Final residual = 0.00144693, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.015258, Final residual = 0.000263365, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.204742, Final residual = 2.83019e-05, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0351397, Final residual = 0.000563656, No Iterations 4
+ExecutionTime = 9.86 s  ClockTime = 10 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01875
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997056  Min(alpha.water) = -0.0149525  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0280037, Final residual = 0.00156698, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0171503, Final residual = 0.00148467, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0131351, Final residual = 0.000210466, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.000674728, Final residual = 2.31976e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0309482, Final residual = 0.000521308, No Iterations 4
+ExecutionTime = 10.04 s  ClockTime = 10 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.019
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.997016  Min(alpha.water) = -0.0148309  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0288918, Final residual = 0.00162431, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0197714, Final residual = 0.00160086, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0119718, Final residual = 0.000196422, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.03829e-08, Final residual = 1.03829e-08, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.997415, Final residual = 7.44389e-06, No Iterations 2
+ExecutionTime = 10.49 s  ClockTime = 10 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01925
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996977  Min(alpha.water) = -0.0349846  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0177595, Final residual = 0.00128782, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0147706, Final residual = 0.00136516, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00933847, Final residual = 0.000165295, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 3.77577e-08, Final residual = 3.77577e-08, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.0862926, Final residual = 2.9281e-05, No Iterations 2
+ExecutionTime = 10.66 s  ClockTime = 11 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0195
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996938  Min(alpha.water) = -0.0261154  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0110189, Final residual = 0.000205327, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00968708, Final residual = 0.000172344, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00737263, Final residual = 0.000151965, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 6.6548e-07, Final residual = 6.6548e-07, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.016172, Final residual = 0.0002412, No Iterations 2
+ExecutionTime = 10.84 s  ClockTime = 11 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.01975
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996898  Min(alpha.water) = -0.0207831  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.481079, Final residual = 0.0287487, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.143636, Final residual = 0.00504655, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.676998, Final residual = 0.0410807, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.28031e-05, Final residual = 2.3003e-07, No Iterations 4
+smoothSolver:  Solving for k, Initial residual = 0.939166, Final residual = 0.0266719, No Iterations 4
+ExecutionTime = 11.01 s  ClockTime = 11 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996859  Min(alpha.water) = -0.0177368  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.73673, Final residual = 0.038917, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.342201, Final residual = 0.0109884, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.783169, Final residual = 0.0411184, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.519495, Final residual = 2.95328e-05, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.69455, Final residual = 0.000450384, No Iterations 2
+ExecutionTime = 11.46 s  ClockTime = 11 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02025
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99682  Min(alpha.water) = -0.0175674  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.790086, Final residual = 0.0419528, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.464306, Final residual = 0.0173586, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.788313, Final residual = 0.0415974, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.669918, Final residual = 8.15075e-06, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.270786, Final residual = 3.50033e-08, No Iterations 2
+ExecutionTime = 11.64 s  ClockTime = 12 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0205
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996781  Min(alpha.water) = -0.0164228  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.725259, Final residual = 0.0339091, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.382161, Final residual = 0.0115208, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.757006, Final residual = 0.0351749, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.389371, Final residual = 2.75926e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.254278, Final residual = 4.64087e-09, No Iterations 2
+ExecutionTime = 11.81 s  ClockTime = 12 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02075
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996741  Min(alpha.water) = -0.0149624  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.707331, Final residual = 0.0373486, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.392773, Final residual = 0.0125142, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.653583, Final residual = 0.0343119, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.815573, Final residual = 5.52768e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.26048, Final residual = 3.52363e-10, No Iterations 2
+ExecutionTime = 11.98 s  ClockTime = 12 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.021
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996702  Min(alpha.water) = -0.0314533  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.070372, Final residual = 0.00303909, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.109213, Final residual = 0.0103639, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0774938, Final residual = 0.00335182, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.416175, Final residual = 1.35851e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.249469, Final residual = 5.40948e-11, No Iterations 2
+ExecutionTime = 12.44 s  ClockTime = 12 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02125
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996663  Min(alpha.water) = -0.0238464  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0247205, Final residual = 0.000843607, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0974874, Final residual = 0.00745032, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.025821, Final residual = 0.000886683, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.802183, Final residual = 1.91375e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.261307, Final residual = 3.64899e-12, No Iterations 2
+ExecutionTime = 12.62 s  ClockTime = 13 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0215
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996624  Min(alpha.water) = -0.0291677  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00284527, Final residual = 7.03926e-05, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00750781, Final residual = 0.000268835, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00313497, Final residual = 7.6773e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.359186, Final residual = 4.71181e-16, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.248108, Final residual = 6.11364e-13, No Iterations 2
+ExecutionTime = 12.79 s  ClockTime = 13 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02175
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996584  Min(alpha.water) = -0.0241224  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000465345, Final residual = 4.44886e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.065174, Final residual = 0.00170161, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000438072, Final residual = 5.73492e-06, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.759437, Final residual = 5.83195e-15, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.250389, Final residual = 9.72894e-14, No Iterations 2
+ExecutionTime = 12.96 s  ClockTime = 13 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.022
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996545  Min(alpha.water) = -0.020889  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000226842, Final residual = 1.02576e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00101548, Final residual = 1.99031e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00021954, Final residual = 1.06287e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.383884, Final residual = 1.07697e-16, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.249337, Final residual = 1.59273e-14, No Iterations 2
+ExecutionTime = 13.41 s  ClockTime = 13 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02225
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996506  Min(alpha.water) = -0.0181799  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 1.52218e-05, Final residual = 1.27307e-07, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000236852, Final residual = 7.61048e-06, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 1.39039e-05, Final residual = 9.68792e-08, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.215267, Final residual = 2.11769e-17, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0976199, Final residual = 2.10421e-14, No Iterations 2
+ExecutionTime = 13.57 s  ClockTime = 13 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0225
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996467  Min(alpha.water) = -0.0159408  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 2.85335e-05, Final residual = 2.11016e-07, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000158457, Final residual = 2.41815e-06, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 2.62158e-05, Final residual = 1.30518e-07, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.331967, Final residual = 5.97299e-17, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.231665, Final residual = 1.60335e-14, No Iterations 2
+ExecutionTime = 13.74 s  ClockTime = 14 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02275
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996427  Min(alpha.water) = -0.0289334  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 1.27757e-05, Final residual = 1.06697e-07, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000643223, Final residual = 1.30006e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 1.08385e-05, Final residual = 7.21485e-08, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.447633, Final residual = 2.10822e-17, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0450774, Final residual = 4.07229e-14, No Iterations 2
+ExecutionTime = 13.92 s  ClockTime = 14 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.023
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996388  Min(alpha.water) = -0.0222286  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 2.41796e-05, Final residual = 2.65867e-07, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00157458, Final residual = 1.91545e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 2.10905e-05, Final residual = 1.77892e-07, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.398035, Final residual = 5.26791e-17, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.175601, Final residual = 1.6349e-13, No Iterations 2
+ExecutionTime = 14.36 s  ClockTime = 14 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02325
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996349  Min(alpha.water) = -0.0391919  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 4.07006e-05, Final residual = 3.9809e-07, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00022117, Final residual = 7.51666e-06, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 2.09105e-05, Final residual = 3.69138e-07, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.447741, Final residual = 1.58739e-15, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.204114, Final residual = 9.51184e-13, No Iterations 2
+ExecutionTime = 14.54 s  ClockTime = 14 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0235
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99631  Min(alpha.water) = -0.03026  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000738457, Final residual = 8.28281e-06, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000357891, Final residual = 9.72558e-06, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 9.89008e-05, Final residual = 2.51708e-06, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.300084, Final residual = 5.59205e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.161403, Final residual = 6.5082e-12, No Iterations 2
+ExecutionTime = 14.71 s  ClockTime = 15 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02375
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99627  Min(alpha.water) = -0.0241853  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000855278, Final residual = 1.55998e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000728874, Final residual = 1.87087e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0143611, Final residual = 0.000433312, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.217951, Final residual = 7.19201e-17, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0814839, Final residual = 1.18359e-11, No Iterations 2
+ExecutionTime = 14.88 s  ClockTime = 15 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.024
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996231  Min(alpha.water) = -0.019995  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000292865, Final residual = 6.94329e-06, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0126009, Final residual = 0.000323447, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 4.59755e-05, Final residual = 1.81541e-06, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.150291, Final residual = 7.04836e-17, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.111557, Final residual = 2.24689e-11, No Iterations 2
+ExecutionTime = 15.33 s  ClockTime = 15 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02425
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996192  Min(alpha.water) = -0.0169958  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000264725, Final residual = 7.59835e-06, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00183518, Final residual = 4.34029e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 3.76872e-05, Final residual = 1.68828e-06, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.321381, Final residual = 2.76428e-16, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0980462, Final residual = 4.14459e-11, No Iterations 2
+ExecutionTime = 15.5 s  ClockTime = 15 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0245
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996153  Min(alpha.water) = -0.0267574  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0006749, Final residual = 2.03706e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00102191, Final residual = 2.91118e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000117881, Final residual = 5.81017e-06, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.269382, Final residual = 2.26174e-15, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.125173, Final residual = 8.16725e-11, No Iterations 2
+ExecutionTime = 15.67 s  ClockTime = 16 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02475
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996113  Min(alpha.water) = -0.0208287  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00959728, Final residual = 0.000254734, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000876507, Final residual = 2.64963e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000350976, Final residual = 1.96774e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.192868, Final residual = 2.84972e-16, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.115672, Final residual = 1.81842e-10, No Iterations 2
+ExecutionTime = 15.84 s  ClockTime = 16 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.025
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996074  Min(alpha.water) = -0.045696  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00174789, Final residual = 4.59038e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000783784, Final residual = 2.49704e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000763396, Final residual = 4.89504e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.265231, Final residual = 1.65698e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.12395, Final residual = 3.99506e-10, No Iterations 2
+ExecutionTime = 16.28 s  ClockTime = 16 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02525
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.996035  Min(alpha.water) = -0.0336221  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.000702521, Final residual = 2.1978e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000871095, Final residual = 2.98577e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000455027, Final residual = 3.34618e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0891458, Final residual = 7.38475e-16, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.128005, Final residual = 8.93843e-10, No Iterations 2
+ExecutionTime = 16.46 s  ClockTime = 16 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0255
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995995  Min(alpha.water) = -0.0259536  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00053097, Final residual = 2.08842e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.000850686, Final residual = 2.93083e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000278195, Final residual = 2.44146e-05, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.269955, Final residual = 1.52649e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.126824, Final residual = 1.96364e-09, No Iterations 2
+ExecutionTime = 16.63 s  ClockTime = 17 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02575
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995956  Min(alpha.water) = -0.0209748  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00080385, Final residual = 3.64537e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00121934, Final residual = 3.83682e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.000532787, Final residual = 7.82549e-06, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.4247, Final residual = 5.1622e-15, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.13316, Final residual = 5.29943e-09, No Iterations 2
+ExecutionTime = 16.8 s  ClockTime = 17 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.026
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995917  Min(alpha.water) = -0.0176024  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00135647, Final residual = 6.12351e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00129422, Final residual = 3.84466e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00213645, Final residual = 3.87877e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.20936, Final residual = 1.62647e-14, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.135682, Final residual = 1.83571e-08, No Iterations 2
+ExecutionTime = 17.25 s  ClockTime = 17 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02625
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995878  Min(alpha.water) = -0.0241179  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00167886, Final residual = 7.35272e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0015352, Final residual = 4.33177e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00176134, Final residual = 3.17154e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.147689, Final residual = 3.27568e-13, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.132389, Final residual = 7.16606e-08, No Iterations 2
+ExecutionTime = 17.42 s  ClockTime = 17 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0265
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995838  Min(alpha.water) = -0.0192061  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00220355, Final residual = 9.08471e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00207653, Final residual = 5.75855e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00329193, Final residual = 0.000302588, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.13069, Final residual = 1.85226e-13, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.134698, Final residual = 3.0001e-07, No Iterations 2
+ExecutionTime = 17.59 s  ClockTime = 18 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02675
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995799  Min(alpha.water) = -0.0415278  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0024132, Final residual = 9.84544e-05, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00240311, Final residual = 6.93486e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00396169, Final residual = 0.000327894, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.113924, Final residual = 4.53638e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.130018, Final residual = 1.0604e-06, No Iterations 2
+ExecutionTime = 17.77 s  ClockTime = 18 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.027
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99576  Min(alpha.water) = -0.0308631  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00580411, Final residual = 0.00025064, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0058946, Final residual = 0.000192419, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00797678, Final residual = 0.000672838, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0859496, Final residual = 1.59457e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.130298, Final residual = 3.15328e-06, No Iterations 2
+ExecutionTime = 18.21 s  ClockTime = 18 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02725
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995721  Min(alpha.water) = -0.0241965  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00533106, Final residual = 0.000259659, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00566884, Final residual = 0.000209018, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00694099, Final residual = 0.000633398, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.117703, Final residual = 3.46339e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.125691, Final residual = 7.18265e-06, No Iterations 2
+ExecutionTime = 18.38 s  ClockTime = 18 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0275
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995681  Min(alpha.water) = -0.0199174  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00536002, Final residual = 0.000253274, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00571868, Final residual = 0.000205489, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00633403, Final residual = 0.000629724, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.104043, Final residual = 5.42355e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.110157, Final residual = 1.23302e-05, No Iterations 2
+ExecutionTime = 18.55 s  ClockTime = 18 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02775
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995642  Min(alpha.water) = -0.0170178  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.005625, Final residual = 0.000273073, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00603317, Final residual = 0.00021581, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00633026, Final residual = 9.57068e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.487875, Final residual = 3.33287e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.117559, Final residual = 2.22827e-05, No Iterations 2
+ExecutionTime = 18.73 s  ClockTime = 19 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.028
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995603  Min(alpha.water) = -0.0183682  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0069645, Final residual = 0.000347045, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00705501, Final residual = 0.000264954, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00720461, Final residual = 0.000117062, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.111642, Final residual = 9.0163e-12, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.11733, Final residual = 3.56099e-05, No Iterations 2
+ExecutionTime = 19.19 s  ClockTime = 19 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02825
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995564  Min(alpha.water) = -0.016741  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00891654, Final residual = 0.000460284, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00854804, Final residual = 0.000367559, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00895343, Final residual = 0.000149981, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0838284, Final residual = 1.58946e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.112255, Final residual = 5.34304e-05, No Iterations 2
+ExecutionTime = 19.37 s  ClockTime = 19 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0285
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995524  Min(alpha.water) = -0.0372998  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00907822, Final residual = 0.000479557, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00841759, Final residual = 0.000417715, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00946605, Final residual = 0.000165336, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.109851, Final residual = 2.24199e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.107949, Final residual = 7.87368e-05, No Iterations 2
+ExecutionTime = 19.54 s  ClockTime = 19 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02875
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995485  Min(alpha.water) = -0.0280328  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00903831, Final residual = 0.000514992, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00866847, Final residual = 0.00048015, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0101753, Final residual = 0.000187116, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0807312, Final residual = 3.47652e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0947937, Final residual = 0.000104592, No Iterations 2
+ExecutionTime = 19.72 s  ClockTime = 20 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.029
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995446  Min(alpha.water) = -0.0224398  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0115739, Final residual = 0.000700184, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0110143, Final residual = 0.000646128, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0125145, Final residual = 0.000243662, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.41743, Final residual = 2.60482e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0962676, Final residual = 0.000160004, No Iterations 2
+ExecutionTime = 20.17 s  ClockTime = 20 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02925
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995407  Min(alpha.water) = -0.0188946  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0163839, Final residual = 0.0010398, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0144928, Final residual = 0.000907193, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.015653, Final residual = 0.000319898, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0715267, Final residual = 8.82868e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0927604, Final residual = 0.000228613, No Iterations 2
+ExecutionTime = 20.34 s  ClockTime = 20 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0295
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995367  Min(alpha.water) = -0.0164698  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0148759, Final residual = 0.000986128, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.013371, Final residual = 0.00088381, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0151511, Final residual = 0.000318395, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.064962, Final residual = 1.69742e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0832046, Final residual = 0.000291672, No Iterations 2
+ExecutionTime = 20.52 s  ClockTime = 20 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.02975
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995328  Min(alpha.water) = -0.0164234  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0135848, Final residual = 0.000908969, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0121947, Final residual = 0.000835765, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0146377, Final residual = 0.000309715, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0822266, Final residual = 1.95649e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0802767, Final residual = 0.000380878, No Iterations 2
+ExecutionTime = 20.69 s  ClockTime = 21 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995289  Min(alpha.water) = -0.0156581  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0124121, Final residual = 0.00085597, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0112233, Final residual = 0.000775107, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0129504, Final residual = 0.000279417, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0487611, Final residual = 3.55059e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.071639, Final residual = 0.000440842, No Iterations 2
+ExecutionTime = 21.14 s  ClockTime = 21 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03025
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99525  Min(alpha.water) = -0.0335415  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0134439, Final residual = 0.000949645, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0118476, Final residual = 0.000811412, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0126075, Final residual = 0.000275259, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.127494, Final residual = 4.20607e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0684505, Final residual = 0.000519, No Iterations 2
+ExecutionTime = 21.32 s  ClockTime = 21 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0305
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99521  Min(alpha.water) = -0.0254523  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0128544, Final residual = 0.000937359, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0112456, Final residual = 0.000772364, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0112202, Final residual = 0.000244093, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.058361, Final residual = 6.14816e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0636927, Final residual = 0.000552776, No Iterations 2
+ExecutionTime = 21.5 s  ClockTime = 21 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03075
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995171  Min(alpha.water) = -0.026816  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0130007, Final residual = 0.000944576, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0108349, Final residual = 0.000743277, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0104396, Final residual = 0.000217961, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0479055, Final residual = 7.00142e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0534163, Final residual = 0.00050633, No Iterations 2
+ExecutionTime = 21.67 s  ClockTime = 22 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.031
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995132  Min(alpha.water) = -0.0212071  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0122555, Final residual = 0.000898432, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0100623, Final residual = 0.000677815, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00937435, Final residual = 0.000185962, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.272253, Final residual = 6.62764e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0501619, Final residual = 0.000485537, No Iterations 2
+ExecutionTime = 22.13 s  ClockTime = 22 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03125
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995093  Min(alpha.water) = -0.0197922  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0129893, Final residual = 0.000969537, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0104776, Final residual = 0.000682957, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00889006, Final residual = 0.000167847, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.046754, Final residual = 1.4019e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0459701, Final residual = 0.000392864, No Iterations 2
+ExecutionTime = 22.32 s  ClockTime = 22 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0315
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995053  Min(alpha.water) = -0.0181304  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0116811, Final residual = 0.000885038, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00957384, Final residual = 0.000609008, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00749106, Final residual = 0.000132728, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0483436, Final residual = 1.7443e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0489806, Final residual = 0.000318487, No Iterations 2
+ExecutionTime = 22.49 s  ClockTime = 22 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03175
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.995014  Min(alpha.water) = -0.0165231  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0107844, Final residual = 0.000823221, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00867333, Final residual = 0.000556932, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0068511, Final residual = 0.000667706, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0502288, Final residual = 1.90684e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.052801, Final residual = 0.000294605, No Iterations 2
+ExecutionTime = 22.66 s  ClockTime = 23 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.032
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994975  Min(alpha.water) = -0.0303444  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0109762, Final residual = 0.000765907, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00980405, Final residual = 0.000539242, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0071603, Final residual = 0.000487434, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0331962, Final residual = 2.10801e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.046651, Final residual = 0.000242129, No Iterations 2
+ExecutionTime = 23.12 s  ClockTime = 23 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03225
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994935  Min(alpha.water) = -0.0234037  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0479237, Final residual = 0.0015153, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0380006, Final residual = 0.000848229, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0390648, Final residual = 0.000847189, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.520658, Final residual = 5.71183e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0571982, Final residual = 0.000208464, No Iterations 2
+ExecutionTime = 23.3 s  ClockTime = 23 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0325
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994896  Min(alpha.water) = -0.0336789  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0864718, Final residual = 0.00363255, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0281204, Final residual = 0.000630411, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.0229067, Final residual = 0.000441962, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.103873, Final residual = 1.34478e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0652365, Final residual = 0.000208029, No Iterations 2
+ExecutionTime = 23.47 s  ClockTime = 23 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03275
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994857  Min(alpha.water) = -0.0275908  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0280281, Final residual = 0.000954934, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00552923, Final residual = 0.00021586, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00477061, Final residual = 0.000290626, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0560538, Final residual = 1.7744e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0653765, Final residual = 0.00022081, No Iterations 2
+ExecutionTime = 23.64 s  ClockTime = 24 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.033
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994818  Min(alpha.water) = -0.02313  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0204615, Final residual = 0.000727055, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00409277, Final residual = 0.000128334, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00211496, Final residual = 0.000107633, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0673213, Final residual = 2.05766e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0731316, Final residual = 0.000291542, No Iterations 2
+ExecutionTime = 24.09 s  ClockTime = 24 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03325
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994778  Min(alpha.water) = -0.0198865  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.027184, Final residual = 0.000282, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00694603, Final residual = 0.000143865, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00651295, Final residual = 0.000499827, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0594312, Final residual = 9.25408e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0730479, Final residual = 0.00030813, No Iterations 2
+ExecutionTime = 24.28 s  ClockTime = 24 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0335
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994739  Min(alpha.water) = -0.01747  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0198476, Final residual = 0.000310461, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00298515, Final residual = 6.87701e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00363811, Final residual = 0.000111445, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.308172, Final residual = 1.40711e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0833705, Final residual = 0.000473886, No Iterations 2
+ExecutionTime = 24.45 s  ClockTime = 24 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03375
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.9947  Min(alpha.water) = -0.0280449  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0193606, Final residual = 0.000381812, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00342986, Final residual = 6.88699e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00340709, Final residual = 9.65408e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.069418, Final residual = 5.06352e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0998285, Final residual = 0.000734413, No Iterations 2
+ExecutionTime = 24.62 s  ClockTime = 25 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.034
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994661  Min(alpha.water) = -0.0218937  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0311607, Final residual = 0.000735336, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00505155, Final residual = 7.62151e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00532482, Final residual = 0.00041289, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0677814, Final residual = 1.05846e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.110007, Final residual = 0.000900189, No Iterations 2
+ExecutionTime = 25.07 s  ClockTime = 25 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03425
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994621  Min(alpha.water) = -0.0450445  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0188357, Final residual = 0.000278489, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00402565, Final residual = 7.91477e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00439726, Final residual = 0.000390284, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0754809, Final residual = 8.70157e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.100312, Final residual = 0.000939941, No Iterations 2
+ExecutionTime = 25.25 s  ClockTime = 25 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0345
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994582  Min(alpha.water) = -0.0336635  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0166257, Final residual = 0.000292828, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00221892, Final residual = 5.75387e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00245495, Final residual = 8.64085e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.058254, Final residual = 1.02555e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.102072, Final residual = 0.00114528, No Iterations 2
+ExecutionTime = 25.42 s  ClockTime = 25 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03475
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994543  Min(alpha.water) = -0.0263863  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00977501, Final residual = 0.000207852, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00164066, Final residual = 5.13601e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00241056, Final residual = 8.1023e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.132252, Final residual = 1.226e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.10302, Final residual = 0.00131861, No Iterations 2
+ExecutionTime = 25.6 s  ClockTime = 26 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.035
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994504  Min(alpha.water) = -0.0216607  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0116035, Final residual = 0.000289655, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00226553, Final residual = 7.75787e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00384439, Final residual = 0.000358772, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0649172, Final residual = 1.96604e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.106386, Final residual = 0.00141747, No Iterations 2
+ExecutionTime = 26.04 s  ClockTime = 26 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03525
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994464  Min(alpha.water) = -0.0184717  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0105675, Final residual = 0.000268907, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00195113, Final residual = 8.4322e-05, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00350417, Final residual = 0.000336433, No Iterations 2
+smoothSolver:  Solving for omega, Initial residual = 0.0452903, Final residual = 2.60218e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.103313, Final residual = 0.00143074, No Iterations 2
+ExecutionTime = 26.22 s  ClockTime = 26 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0355
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994425  Min(alpha.water) = -0.0258224  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0109157, Final residual = 0.000303648, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00202209, Final residual = 0.000105401, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00250891, Final residual = 6.89471e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.106435, Final residual = 2.54766e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.105546, Final residual = 0.00149253, No Iterations 2
+ExecutionTime = 26.39 s  ClockTime = 26 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03575
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994386  Min(alpha.water) = -0.0204443  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.00781723, Final residual = 0.000305298, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0015579, Final residual = 0.000115181, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00195519, Final residual = 6.79121e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0707804, Final residual = 2.8029e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.106343, Final residual = 0.00157545, No Iterations 2
+ExecutionTime = 26.56 s  ClockTime = 27 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.036
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994347  Min(alpha.water) = -0.0434529  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0098075, Final residual = 0.000330884, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00199763, Final residual = 0.000149866, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00234829, Final residual = 6.69966e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0471009, Final residual = 3.11258e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.108019, Final residual = 0.001742, No Iterations 2
+ExecutionTime = 27 s  ClockTime = 27 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03625
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994307  Min(alpha.water) = -0.0324085  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0121128, Final residual = 0.000429232, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00219074, Final residual = 0.000173119, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00306611, Final residual = 6.55e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0770563, Final residual = 3.85343e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.105668, Final residual = 0.00185537, No Iterations 2
+ExecutionTime = 27.18 s  ClockTime = 27 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0365
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994268  Min(alpha.water) = -0.0255081  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0110712, Final residual = 0.000542117, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.0028732, Final residual = 0.000201186, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00277955, Final residual = 6.58189e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0614038, Final residual = 4.50849e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.101189, Final residual = 0.00193868, No Iterations 2
+ExecutionTime = 27.36 s  ClockTime = 27 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 6.93184e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03675
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994229  Min(alpha.water) = -0.0211113  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0126182, Final residual = 0.000652693, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00316523, Final residual = 0.000245792, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00292181, Final residual = 6.60597e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.202561, Final residual = 4.03342e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.101925, Final residual = 0.00197196, No Iterations 2
+ExecutionTime = 27.53 s  ClockTime = 28 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.037
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99419  Min(alpha.water) = -0.0181754  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0129274, Final residual = 0.00074322, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00303618, Final residual = 0.000277448, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00291934, Final residual = 6.90289e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.00390766, Final residual = 4.30009e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0905316, Final residual = 0.0018394, No Iterations 2
+ExecutionTime = 28 s  ClockTime = 28 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03725
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99415  Min(alpha.water) = -0.0211376  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0132938, Final residual = 0.000851858, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00338847, Final residual = 0.000330722, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.00337198, Final residual = 7.51378e-05, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 3.75859e-06, Final residual = 3.04184e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0228948, Final residual = 0.00048245, No Iterations 2
+ExecutionTime = 28.17 s  ClockTime = 28 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0375
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994111  Min(alpha.water) = -0.018206  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0125777, Final residual = 0.00119202, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00438702, Final residual = 8.51702e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00410819, Final residual = 0.000101539, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.000574559, Final residual = 8.85494e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0663962, Final residual = 0.00154248, No Iterations 2
+ExecutionTime = 28.34 s  ClockTime = 28 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03775
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994072  Min(alpha.water) = -0.0391823  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0152515, Final residual = 0.00135364, No Iterations 2
+smoothSolver:  Solving for Uy, Initial residual = 0.00478308, Final residual = 9.54165e-05, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00444694, Final residual = 0.000107701, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0205787, Final residual = 5.10637e-08, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0862022, Final residual = 0.00216216, No Iterations 2
+ExecutionTime = 28.52 s  ClockTime = 29 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.038
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.994032  Min(alpha.water) = -0.0295294  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0146302, Final residual = 0.000270713, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00491329, Final residual = 0.000108991, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00447156, Final residual = 0.000113849, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.00291447, Final residual = 1.70852e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0398519, Final residual = 0.00107864, No Iterations 2
+ExecutionTime = 28.98 s  ClockTime = 29 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03825
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993993  Min(alpha.water) = -0.0236696  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0195185, Final residual = 0.000411463, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00741098, Final residual = 0.000171799, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00701577, Final residual = 0.000182144, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.000274556, Final residual = 3.48722e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0482494, Final residual = 0.0015633, No Iterations 2
+ExecutionTime = 29.15 s  ClockTime = 29 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0385
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993954  Min(alpha.water) = -0.0199892  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0188431, Final residual = 0.000440119, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00771639, Final residual = 0.000186931, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00711392, Final residual = 0.00019198, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.000291752, Final residual = 2.23777e-09, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0589289, Final residual = 0.00219918, No Iterations 2
+ExecutionTime = 29.33 s  ClockTime = 29 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03875
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993915  Min(alpha.water) = -0.017526  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0199807, Final residual = 0.000481885, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0080316, Final residual = 0.000203249, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0072896, Final residual = 0.000204232, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.39328e-05, Final residual = 9.93046e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0297302, Final residual = 0.00122419, No Iterations 2
+ExecutionTime = 29.52 s  ClockTime = 30 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.039
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993875  Min(alpha.water) = -0.0162241  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0221125, Final residual = 0.000599268, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.008648, Final residual = 0.000235083, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.00777899, Final residual = 0.000235828, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.2558e-05, Final residual = 1.58247e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0273079, Final residual = 0.00118781, No Iterations 2
+ExecutionTime = 30.03 s  ClockTime = 30 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03925
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993836  Min(alpha.water) = -0.0160107  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0260276, Final residual = 0.000678557, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.00954027, Final residual = 0.000259377, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0089377, Final residual = 0.000267693, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 4.44554e-06, Final residual = 7.78034e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0139096, Final residual = 0.000237498, No Iterations 2
+ExecutionTime = 30.24 s  ClockTime = 30 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0395
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993797  Min(alpha.water) = -0.0349648  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0290744, Final residual = 0.000802708, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0125186, Final residual = 0.000362684, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0132261, Final residual = 0.000414632, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 0.0278724, Final residual = 3.62833e-10, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.0272894, Final residual = 0.00127953, No Iterations 2
+ExecutionTime = 30.46 s  ClockTime = 31 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.03975
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993758  Min(alpha.water) = -0.0266749  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0304532, Final residual = 0.000795588, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0116578, Final residual = 0.000339976, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0125705, Final residual = 0.000395623, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 5.50548e-06, Final residual = 4.6346e-11, No Iterations 2
+smoothSolver:  Solving for k, Initial residual = 0.00640297, Final residual = 0.000232548, No Iterations 2
+ExecutionTime = 30.67 s  ClockTime = 31 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993718  Min(alpha.water) = -0.024889  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0393311, Final residual = 0.00109184, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0145203, Final residual = 0.000433675, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0169885, Final residual = 0.000513985, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 9.3825e-07, Final residual = 9.3825e-07, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00133192, Final residual = 6.4835e-05, No Iterations 2
+ExecutionTime = 31.19 s  ClockTime = 31 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04025
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993679  Min(alpha.water) = -0.0189142  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0361212, Final residual = 0.00108825, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0123792, Final residual = 0.0004115, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0150698, Final residual = 0.000504664, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 2.49314e-09, Final residual = 2.49314e-09, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 5.0215e-05, Final residual = 2.29004e-06, No Iterations 2
+ExecutionTime = 31.41 s  ClockTime = 32 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0405
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99364  Min(alpha.water) = -0.018726  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0325562, Final residual = 0.00104324, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0108184, Final residual = 0.000383239, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0134127, Final residual = 0.000484298, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.03145e-07, Final residual = 1.03145e-07, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.000167645, Final residual = 7.67422e-06, No Iterations 2
+ExecutionTime = 31.63 s  ClockTime = 32 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04075
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993601  Min(alpha.water) = -0.017942  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.0291385, Final residual = 0.000980983, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0095187, Final residual = 0.000349589, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.0122694, Final residual = 0.000471006, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.12048e-07, Final residual = 1.12048e-07, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00064461, Final residual = 5.43782e-05, No Iterations 4
+ExecutionTime = 31.85 s  ClockTime = 32 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.041
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993561  Min(alpha.water) = -0.016847  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.722939, Final residual = 0.0400864, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.199383, Final residual = 0.00950415, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.810211, Final residual = 0.0504292, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 3.28986e-08, Final residual = 3.28986e-08, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.946327, Final residual = 0.057172, No Iterations 4
+ExecutionTime = 32.35 s  ClockTime = 32 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04125
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993522  Min(alpha.water) = -0.031703  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.29754, Final residual = 0.00573367, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.0593804, Final residual = 0.0048563, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.57736, Final residual = 0.0116643, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 2.89188e-09, Final residual = 2.89188e-09, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.11061, Final residual = 0.0053129, No Iterations 4
+ExecutionTime = 32.57 s  ClockTime = 33 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0415
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993483  Min(alpha.water) = -0.0244466  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.765432, Final residual = 0.0317939, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.416572, Final residual = 0.0253696, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.833949, Final residual = 0.0361913, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 9.76644e-10, Final residual = 9.76644e-10, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.093592, Final residual = 0.00518901, No Iterations 4
+ExecutionTime = 32.79 s  ClockTime = 33 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04175
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993444  Min(alpha.water) = -0.0288543  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.839378, Final residual = 0.0376508, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.771774, Final residual = 0.071605, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.843747, Final residual = 0.038203, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 6.94263e-10, Final residual = 6.94263e-10, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.174071, Final residual = 0.00906715, No Iterations 4
+ExecutionTime = 33 s  ClockTime = 33 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.042
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993404  Min(alpha.water) = -0.0252261  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.843005, Final residual = 0.0361713, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.839742, Final residual = 0.0819521, No Iterations 2
+smoothSolver:  Solving for Uz, Initial residual = 0.848364, Final residual = 0.0367032, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 7.04258e-10, Final residual = 7.04258e-10, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.158278, Final residual = 0.00834766, No Iterations 4
+ExecutionTime = 33.51 s  ClockTime = 34 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04225
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993365  Min(alpha.water) = -0.0221353  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.845562, Final residual = 0.0414736, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.841021, Final residual = 0.0115926, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.850975, Final residual = 0.0418529, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 2.11984e-09, Final residual = 2.11984e-09, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.819701, Final residual = 0.043054, No Iterations 4
+ExecutionTime = 33.73 s  ClockTime = 34 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 7.85199e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0425
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993326  Min(alpha.water) = -0.0196759  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.845469, Final residual = 0.0389828, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.834822, Final residual = 0.0120495, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.850798, Final residual = 0.0394101, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 2.7464e-11, Final residual = 2.7464e-11, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00541777, Final residual = 0.000283649, No Iterations 4
+ExecutionTime = 33.95 s  ClockTime = 34 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04275
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993287  Min(alpha.water) = -0.0177284  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.844624, Final residual = 0.0393804, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.837201, Final residual = 0.0120725, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.849881, Final residual = 0.0398059, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.92389e-11, Final residual = 1.92389e-11, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.0671546, Final residual = 0.00352963, No Iterations 4
+ExecutionTime = 34.17 s  ClockTime = 34 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 4.84615e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.043
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993247  Min(alpha.water) = -0.0291209  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.843594, Final residual = 0.039199, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.837662, Final residual = 0.0128675, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.848715, Final residual = 0.039592, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 1.36529e-11, Final residual = 1.36529e-11, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00360077, Final residual = 0.000189323, No Iterations 4
+ExecutionTime = 34.64 s  ClockTime = 35 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04325
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993208  Min(alpha.water) = -0.0227515  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.844877, Final residual = 0.0388374, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.839042, Final residual = 0.0129315, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.849918, Final residual = 0.0392255, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 9.81869e-13, Final residual = 9.81869e-13, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00386966, Final residual = 0.000204909, No Iterations 4
+ExecutionTime = 34.82 s  ClockTime = 35 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.0435
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.993169  Min(alpha.water) = -0.0407175  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.843525, Final residual = 0.0389504, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.838025, Final residual = 0.0134812, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.848375, Final residual = 0.0393168, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 7.2627e-13, Final residual = 7.2627e-13, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00017286, Final residual = 9.16499e-06, No Iterations 4
+ExecutionTime = 35 s  ClockTime = 35 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.04375
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99313  Min(alpha.water) = -0.0315237  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.841722, Final residual = 0.0369547, No Iterations 4
+smoothSolver:  Solving for Uy, Initial residual = 0.837157, Final residual = 0.0132642, No Iterations 4
+smoothSolver:  Solving for Uz, Initial residual = 0.846555, Final residual = 0.0372466, No Iterations 4
+smoothSolver:  Solving for omega, Initial residual = 5.15884e-13, Final residual = 5.15884e-13, No Iterations 0
+smoothSolver:  Solving for k, Initial residual = 0.00197173, Final residual = 0.00010606, No Iterations 4
+ExecutionTime = 35.18 s  ClockTime = 35 s
+
+Courant Number mean: 0.4325 max: 0.432501
+Interface Courant Number mean: 3.926e-05 max: 0.4325
+deltaT = 0.00025
+Time = 0.044
+
+PIMPLE: iteration 1
+MULES: Solving for alpha.water
+Phase-1 volume fraction = 0.99309  Min(alpha.water) = -0.0254723  Max(alpha.water) = 1
